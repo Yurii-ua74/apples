@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.night-mode {
+    background-color: #111111;
+}
+
+.day-mode {
+    background-color: white;
+}
+
+/*  /////////  верхній навігатор  /////////  */
+.container {
+    display: flex; /* Встановлення flex контейнера */
+    justify-content: space-between; /* Розташування блоків в ряду з рівномірним простором між ними */
+    background: #101010!important; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+}
+
+.logo-img {
+    width: 310px; 
+    height: 80px; 
+}
+
+.select {                /* для елементів .select, яка дозволяє виводити свої дочірні елементи в рядок */
+    display: flex;
+    align-items: center;
+}
+
+.lang-emoji {
+    margin-right: 10px;  /* відступ між елементами */
+}
+
+.select-ico {
+    width: 15px; 
+    height: 15px; 
+}     
+
+.block-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_center {
+    margin: 0 5px;
+    padding: 7px 20px;
+    border: 2px solid gold;
+    border-radius: 20px;
+    background-color: transparent;  
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.block-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-language {
+    cursor: pointer;
+}
+
+.languages-options-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000; 
+    display: none;
+}
+
+.option-item {
+    padding: 10px;
+    color: white; 
+    cursor: pointer;
+}
+
+a {
+color: #fff200;
+text-decoration: none;
+cursor: pointer
+}
+
+.p-2 {
+padding: 8px
+}
+
+.mt-2, .my-2 {
+margin-top: 8px;
+}
+
+.pr-3 {
+padding-right: 6px;
+}
+
+.pr-5 {
+padding-right: 10px;
+}
+
+.pr-15 {
+padding-right: 30px;
+}
+
+.py-4 {
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+.pl-4 {
+padding-left: 10px;
+}
+
+.mr-1 {
+margin-right: 3px;
+}
+
+.mr-4 {
+margin-right: 12px;
+}
+
+.mr-5 {
+margin-right: 15px;
+}
+
+.mr-10 {
+margin-right: 80px;
+}
+
+.ml-12 {
+margin-left: 90px;
+}
+
+.ml-1 {
+margin-left: 3px;
+}
+
+.ml-4 {
+margin-left: 12px;
+}
+
+.ml-10 {
+margin-left: 80px;
+}
+
+.mt-1 {
+margin-top: 3px;
+}
+
+.ht {
+height: 40px;
+}
+
+.ht-3 {
+height: 30px;
+}
+
+.ht-2 {
+height: 20px;
+}
+
+.color-grey-light {
+border: 2px solid #808080;
+}
+
+.border-radius-4 {
+border-radius: 16px;
+}
+
+.btn {
+border-radius: 28px;
+padding: 16px 32px;
+text-align: center;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+border: none
+}  
+/* //////////// LIST  /////////////////  */
+.custom-options-list {
+display: none;
+position: absolute;
+z-index: 1;
+}
+
+.custom-options-list.active {
+display: block;
+}
+
+/* //////// switch day-night //////////  */
+.--switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.--switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.--slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #808080; /* Колір фону вимкненого стану */
+    border: 2px solid gold;
+    border-radius: 16px;
+    transition: 0.4s;
+    padding-top: 3px;
+    cursor: pointer;  /*///////*/
+}
+
+.--slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 32px;
+    left: 4px;   /* положення кнопки */
+    bottom: 4px;
+    background-color: gold; /* Колір кнопки */
+    border: 2px solid gold;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+input:checked + .--slider {
+    background-color: #333333; /* Колір фону увімкненого стану */
+    border: 2px solid gold;
+}
+
+input:checked + .--slider:before {
+    transform: translateX(26px);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}        
+
+.day-icon {
+    left: 4px;    
+}
+
+.night-icon {
+    right: 4px;
+}
+
+/*  //////////////////////////////////////  */
+/*  /////////// нижній нввігатор /////////  */
+.container-d {
+align-items: center;
+display: flex; /* Встановлення flex контейнера */
+justify-content: space-between; /* Розташування блоків в ряду з рівномірним простором між ними */
+background: #101010!important; 
+color: #fff;
+padding: 10px 0;
+width: 100%;
+}
+
+.btn_center-d {
+padding: 10px 20px; /* Налаштовуємо відступи */
+/* border: none; Відміна границі кнопки */
+border: 2px solid #555555;
+border-radius: 20px;
+width: 180px;
+height: 40px;
+}
+
+.with-image {
+background-image: url("/images/list.png"); /* Додаємо фотографію на кнопку */
+background-size: cover;
+background-position: center;  
+}
+
+.search-container {
+position: relative;
+display: inline-block; /* Дозволяє контейнерові займати тільки той простір, який він потребує */ 
+/* align-items: center; */
+}
+
+.search-input {
+border: 2px solid #555555;
+border-radius: 20px;
+width: 950px;
+height: 35px;
+background-color: #222222;
+color: white;
+padding-left: 30px;
+}
+
+.search-icon {
+position: absolute;
+top: 50%;
+cursor: pointer; /*  іконка має бути натискана */
+transform: translateY(-50%);
+left: 10px;
+}
+
+.block-center-d {
+position: relative;
+}
+
+.block-right-d {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*  ////////// Кн Каталог товарів ///////////  */
+.list {
+    display: none;
+    position: fixed;
+    
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px;
+    background-color: #111111;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    width: 85%;            
+    color: #808080;
+}
+
+
+/*  /////////////  блок-slider  /////////////  */
+.image-slider-container {
+    width: 88%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #ccc; /* Optional: Add a border for visualization */
+}
+
+.h-calc {
+    height: calc(100vh); /* 50px is an example of the height of your navigation bar; adjust as needed */
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*  /////////////  блок-stock (Акції) //////////////   */ 
+.h-auto {
+height: auto;
+}
+
+.h1-stock {
+color:#808080;
+}
+
+.stock {
+width: 100%; /* заповнити контейнер */
+height: auto; 
+}       
+
+.stock-container {
+display: flex; /* Use flexbox for horizontal layout */
+justify-content: center; /* Center items horizontally */
+align-items: center; /* Center items vertically */
+}
+
+.stock img {
+width: 100%; /* Make images fill their container */
+height: auto; /* Maintain aspect ratio */
+} 
+
+/*   /////////////// futer //////////////   */
+.invisible-border {
+border: 0; /* встановлення товщини бордера на 0 */
+border-color: transparent; /* встановлення прозорого кольору бордера */
+}

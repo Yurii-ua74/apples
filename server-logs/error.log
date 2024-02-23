@@ -1,0 +1,12 @@
+[Sun Feb 18 11:59:53.436309 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51878] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 11:59:53.436309 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51878] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 11:59:53.436309 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51878] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 11:59:53.436309 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51878] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:21.692610 2024] [php:warn] [pid 5856:tid 1888] [client ::1:51947] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:21.692610 2024] [php:warn] [pid 5856:tid 1888] [client ::1:51947] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:21.692610 2024] [php:warn] [pid 5856:tid 1888] [client ::1:51947] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:21.692610 2024] [php:warn] [pid 5856:tid 1888] [client ::1:51947] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:22.852506 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51948] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:22.852506 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51948] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:22.852506 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51948] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
+[Sun Feb 18 12:01:22.852506 2024] [php:warn] [pid 5856:tid 1896] [client ::1:51948] PHP Warning:  Undefined variable $uri in D:\\Project\\Apples\\index.php on line 13
