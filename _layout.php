@@ -90,7 +90,7 @@
                 <input type="text" placeholder=" Пошук по сайту" class="search-input pl-4">           
             </div>
         </div>
-        <!-- лівий блок навігатора з трьома іконками -->
+        <!-- правий блок навігатора з трьома іконками -->
         <div class="block-right-d ht mr-10">
             <a href="privato"><img class="ht-3 mr-4" src="/images/body.ico" alt="Особистий кабінет"></a>
             <a href="equal"><img class="ht-3 mr-4" src="/images/equal-r.ico" alt="Порівняння товарів"></a>

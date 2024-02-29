@@ -23,9 +23,10 @@ body {
     padding: 10px 0;
 }
 
-/* .container_layout {
-    
-} */
+ .container_rent {
+    max-width: 1200px; 
+    margin: 0 auto;
+} 
 
 .logo-img {
     width: 310px; 
@@ -88,6 +89,10 @@ body {
     cursor: pointer;
 }
 
+.max-width {
+    max-width: 100%;
+}
+
 a {
 color: #fff;
 text-decoration: none;
@@ -137,6 +142,9 @@ margin-right: 15px;
 
 .mr-10 {
 margin-right: 80px;
+}
+.mr-12 {
+margin-right: 90px;    
 }
 
 .ml-12 {
@@ -294,7 +302,7 @@ height: 40px;
 }
 
 .with-image {
-background-image: url("/images/list.png"); /* Додаємо фотографію на кнопку */
+background-image: url("/images/list.png"); /* Додає фотографію на кнопку */
 background-size: cover;
 background-position: center;  
 }
@@ -357,7 +365,7 @@ align-items: center;
 }
 
 .h-calc {
-    height: calc(100vh); /* 50px is an example of the height of your navigation bar; adjust as needed */
+    height: calc(100vh); /* 50px is an example of the height */
 }
 
 .image-slider {
@@ -377,6 +385,9 @@ height: auto;
 
 .h1-stock {
 color:#808080;
+}
+.h1-white {
+    color:antiquewhite;
 }
 
 .stock {
@@ -399,4 +410,27 @@ height: auto; /* Maintain aspect ratio */
 .invisible-border {
 border: 0; /* встановлення товщини бордера на 0 */
 border-color: transparent; /* встановлення прозорого кольору бордера */
+}
+
+/*   /////////////  img rent /////////////  */
+.image-slider-container-rent {
+    width: 88%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #ccc; /* Optional: Add a border for visualization */
+}
+
+.h-calc-rent {
+    height: calc(100vh); /* 50px is an example of the height */
+}
+
+.image-slider-rent {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider-rent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
