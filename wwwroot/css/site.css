@@ -23,6 +23,10 @@ body {
     padding: 10px 0;
 }
 
+/* .container_layout {
+    
+} */
+
 .logo-img {
     width: 310px; 
     height: 80px; 
@@ -85,7 +89,7 @@ body {
 }
 
 a {
-color: #fff200;
+color: #fff;
 text-decoration: none;
 cursor: pointer
 }
@@ -190,6 +194,10 @@ border: none
 display: none;
 position: absolute;
 z-index: 1;
+}
+
+.dropdown-content a:hover h4 {
+    color: yellow;
 }
 
 .custom-options-list.active {

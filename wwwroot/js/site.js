@@ -1,25 +1,43 @@
 // поле Каталог товарів - випадаючий список
+// перевірка де знаходиться мишка
+function isMouseInButtonOrWindow(event) {
+    var button = document.querySelector('.btn_center-d');
+    var productList = document.getElementById('productList');
+    
+    var buttonRect = button.getBoundingClientRect();
+    var productListRect = productList.getBoundingClientRect();
+    
+    // Перевірка, чи миша в межах кнопки або вікна з додатковим відступом
+    var isInButton = (
+        event.clientX >= buttonRect.left - 15 &&
+        event.clientX <= buttonRect.right + 15 &&
+        event.clientY >= buttonRect.top - 15 &&
+        event.clientY <= buttonRect.bottom + 15
+    );
+    return isInButton ;
+}
+// відкриття списку
 function openProductList() {
     var navBlock = document.querySelector('.btn_center-d');
     navBlock.style.border = '1px solid yellow';
     var customElement = document.getElementById('productList');
-    // var overlay = document.querySelector('.overlay');
-    
     customElement .style.display = 'block';
-    // overlay.style.display = 'block';
 }
 
-function closeProductList() {
+// закриття списку
+function closeProductList(event) {
     var customElement  = document.getElementById('productList');
-    // var overlay = document.querySelector('.overlay');
-
-    customElement .style.display = 'none';
-    // overlay.style.display = 'none';
-
-    var navBlock = document.querySelector('.btn_center-d');
-    navBlock.style.border = ''; // відновлення стандартного бордера
+    // Перевірка чи фокус миші на кнопці або вікні dropdown-content
+    if (!isMouseInButtonOrWindow(event)) {
+        customElement.style.display = 'none';  
+        var navBlock = document.querySelector('.btn_center-d');
+        navBlock.style.border = '';  
+    }   
 }
 
+// Додавання обробника подій для dropdown-content
+var dropdownContent = document.querySelector('.dropdown-content');
+dropdownContent.addEventListener('mouseleave', closeProductList);
 
 // блок слайдер 
 document.addEventListener("DOMContentLoaded", function () {
@@ -54,3 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.classList.toggle("night-mode", toggleSwitch.checked);
         });
     });
+
+    //  обробка кліків верхнього навігатора
+    // function handleButtonClick(buttonText) {
+    //     window.location.href = "apples.php";
+    // }
