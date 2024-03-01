@@ -14,11 +14,20 @@
 </div>
 
 <div class="image-slider-container h-auto invisible-border">
-       <div>
-           <h1 class="h1-stock">Акції</h1>
-       </div>
        <div class="stock-container">
-       <a href="stock1" class="stock mr-5"><div><img src="/images/stocks/stock1.png" alt="Stock 1"></div></a>
-       <a href="stock2" class="stock"><div><img src="/images/stocks/stock2.png" alt="Stock 2"></div></a>
+       <div><img src="/images/rents/rent1.png" alt="Stock 1"></div>
+       <div><img src="/images/rents/rent2.png" alt="Stock 2"></div>
        </div>
+</div>
+
+<div class="image-slider-container-rent invisible-border">
+        <div class="image-slider-rent">  
+            <img src="/images/rents/rent-info1.png" alt="rent-info1">                
+        </div>
+</div>
+
+<div class="image-slider-container-rent invisible-border">
+        <div class="image-slider-rent">  
+            <img src="/images/rents/rent-info2.png" alt="rent-info2">                
+        </div>
 </div>

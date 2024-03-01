@@ -16,6 +16,7 @@ function isMouseInButtonOrWindow(event) {
     );
     return isInButton ;
 }
+
 // відкриття списку
 function openProductList() {
     var navBlock = document.querySelector('.btn_center-d');
@@ -38,14 +39,16 @@ function closeProductList(event) {
 // Додавання обробника подій для dropdown-content
 var dropdownContent = document.querySelector('.dropdown-content');
 dropdownContent.addEventListener('mouseleave', closeProductList);
-
+///////////////
+//////////////////////////////////////////////////////////////////
+///////////////
 // блок слайдер 
 document.addEventListener("DOMContentLoaded", function () {
         // Get the image slider element
         const imageSlider = document.querySelector(".image-slider");
         const toggleSwitch = document.getElementById("toggleSwitch");
 
-        // Function to handle the sliding effect
+        // слайд ефект
         function slideImages() {
             // Calculate the width of a single image
             const imageWidth = document.querySelector(".image-slider img").clientWidth;
@@ -53,9 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // Move the slider to the left by the width of one image
             imageSlider.style.transition = "transform 0.5s ease-in-out";
             imageSlider.style.transform = `translateX(-${imageWidth}px)`;
-
-            // Append the first image to the end of the slider
-            // imageSlider.appendChild(imageSlider.firstElementChild);
 
             // Reset the transition and move the first image to the end
             setTimeout(() => {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 500);
         }
 
-        // Call the slideImages function every 4000 milliseconds (4 seconds)
+        // Викликати the slideImages function кожні 4000 мілісекунд (4 секунд)
         setInterval(slideImages, 4000);
 
         toggleSwitch.addEventListener("change", function () {
