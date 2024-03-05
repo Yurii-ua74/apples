@@ -1,19 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>   🍏 YABLUKA.ua | Мережа магазинів техніки Apple в Україні — найкраща ціна на товари Apple </title>
     <link rel="stylesheet" href="/css/site.css"/>
-    <style>
-    .container-f {
+
+<style>
+.container-f {
   display: grid;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px; /* Задайте бажаний відступ між блоками */
+  gap: 20px; /* відступ між блоками */
 }
 
 .footer-block {
@@ -24,6 +27,7 @@
 
 <body>
 
+<?session_start();?>
 <!-- Верхній навігатор  -->
 <nav>
         <div class="container">
@@ -34,10 +38,12 @@
             <div class="block-center">
                 <button class="btn_center"><a href="stores">Магазини</a></button>
                 <button class="btn_center"><a href="noleggiare">Yabluka|Прокат</a></button>
-                <button class="btn_center"><a href="saldi">Розпродаж Б/У</a></button>
+                <button class="btn_center"><a href="sales">Розпродаж Б/У</a></button>
                 <button class="btn_center"><a href="scambio">Yabluka|Обмін</a></button>
+                <div id="user-info" class="user-info ml-4"></div>
             </div>
                 
+
             <!-- перемикач мови -->
             <div class="block-right">          
                 <div class="small-select-wrapper">
@@ -107,7 +113,7 @@
         </div>
         <!-- правий блок навігатора з трьома іконками -->
         <div class="block-right-d ht mr-10">
-            <a href="privato"><img class="ht-3 mr-4" src="/images/body.ico" alt="Особистий кабінет"></a>
+            <a href="private"><img class="ht-3 mr-4" src="/images/body.ico" alt="Особистий кабінет"></a>
             <a href="equal"><img class="ht-3 mr-4" src="/images/equal-r.ico" alt="Порівняння товарів"></a>
             <a href="cestino"><img class="ht" src="/images/cestino-r.ico" alt="Кошик"></a>
         </div>
@@ -182,16 +188,6 @@
         <p>Обслуговування клієнтів</p>
       </div>
 
-      <!-- П'ятий блок -->
-      <!-- <div class="footer-block">
-        <h3>Call-Центр</h3>
-        <p>0(800)333-333</p>
-        <p>гаряча лінія</p>
-        <p>0(800)555-555</p>
-        <p>Оформлення замовлення</p>
-        <p>orders@yabloki.ua</p>
-        <p>Працюємо щодня<br>c 9:00 до 22:00</p>
-      </div> -->
     </div>
 
     <div class="block-left ml-12">
@@ -221,6 +217,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/site.js"></script>
+<script>
+// Отримання даних з localStorage
+var client_id = localStorage.getItem("client_id");
+var first_name = localStorage.getItem("first_name");
+var last_name = localStorage.getItem("last_name");
+
+// Виведення даних у навігаторі
+var userInfoDiv = document.getElementById("user-info");
+if (client_id && first_name && last_name) {
+    userInfoDiv.innerHTML = '<a href="log_out">' + first_name + ' ' + last_name + '</a>';
+}
+</script>
 </body>
 </html>
 

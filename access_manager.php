@@ -1,5 +1,4 @@
 <?php
-
 // echo '<pre>' ;
 // print_r($_SERVER) ;
 // echo $_SERVER ['REQUEST_URI'] ;
@@ -63,7 +62,7 @@ $routes = [
 	''         => 'index.php',
     'stores'   => 'stores.php',
 	'noleggiare'   => 'rent.php',
-	'saldi'      => 'sales.php',
+	'sales'      => 'sales.php',
 	'scambio' => 'exchange.php',
 	'apples'   => 'apples.php',
 	'applesused' => 'applesused.php',
@@ -73,7 +72,7 @@ $routes = [
 	'gameconsole' => 'gameconsole.php',
 	'photovideo' => 'photovideo.php',
 	'hometechnics' => 'hometechnics.php',
-	'privato' => 'private.php',
+	'private' => 'private.php',
 	'equal' => 'equal.php',
 	'cestino' => 'cart.php',
 	'stock1' => 'stock1.php',
@@ -83,6 +82,11 @@ $routes = [
 	'popular3' => 'popl3.php',
 	'popular4' => 'popl4.php',
 	'popular5' => 'popl5.php',
+	'registration' => 'registration.php',
+	'do_register' => 'do_register.php',
+	'do_login' => 'do_login.php',
+	'do_sale' => 'do_sale.php',
+	'log_out' => 'log_out.php',
 ] ;
 // Перевіряє, чи існує зазначений URI в масиві маршрутів.
 if( isset( $routes[ $uri ] ) ) {   // у маршрутах є відповідний запис
