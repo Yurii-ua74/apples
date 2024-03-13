@@ -18,12 +18,73 @@ body {
     .block-right {
         margin-top: 10px;
         text-align: center;
+        align-items: center;
+    }
+
+    .block-right {
+        display: flex;    /*/////////////*/
+        justify-content: space-between;   /*/////////////*/
     }
 
     .select,
     .block-center,
     .block-right {
         width: 100%;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+    /* Apply styles only when the screen width is 768 pixels or less */
+    .block-right {
+        flex-direction: column; /* Change the flex direction to column for smaller screens */
+        align-items: center;
+    }
+
+    /* Add margin to create space between language switcher and background switcher */
+    .small-select-wrapper {
+        margin-bottom: 10px;
+    }
+    .--switch {
+        margin-left: 100px;
+    }
+    }
+
+    .block-center-d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-icon {
+        height: 2rem; /* Adjust the height as needed */
+    }
+    
+    .search-input {
+        padding: 0.5rem; /* Adjust padding as needed */
+        font-size: 1rem; /* Adjust font size as needed */
+    }
+
+    @media (max-width: 768px) {
+        /* Apply styles only when the screen width is 768 pixels or less */
+        .search-container {
+            flex-direction: column; 
+            align-items: center;
+            max-width: 10px;
+            margin-right: 500px;
+        }
+    
+        .search-icon {
+            margin-bottom: 1rem; 
+        }
+    
+        .search-input {
+            width: 100%; 
+        }
     }
 
     .btn_center {
@@ -63,7 +124,7 @@ body {
     .container-d {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;       
     }
 
     .block-left,
@@ -321,7 +382,7 @@ z-index: 1;
 }
 
 .dropdown-content a:hover h4 {
-    color: yellow;
+color: yellow;
 }
 
 .custom-options-list.active {
@@ -600,6 +661,13 @@ border-color: transparent; /* встановлення прозорого кол
     margin-bottom: 10px;
   }
 
+  @media (max-width: 768px) {
+    .block {
+        width: calc((100% - 20px)); /* Make the blocks full-width for smaller screens */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
 /*  ///////  stock3 stock4  ///////  */
 .container-st3 {
     display: flex;
@@ -645,9 +713,17 @@ border-color: transparent; /* встановлення прозорого кол
     text-align: center;
 }
 
+.d-max {
+    max-width: 250px; /*  максимальнa ширинa фото */
+}
+
 /*  /////  автентифікація / реєстрація  /////  */
 .bgc-yellow {
     background-color: yellow;
+}
+
+.bgc-red {
+    background-color: rgba(255, 85, 0, 0.997);
 }
 
 .card {

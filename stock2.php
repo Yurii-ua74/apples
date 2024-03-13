@@ -1,5 +1,5 @@
 
-    <div class="container-st3 ml-10">
+    <div class="container-st3 ml-10" onclick="addToCart('stocks/stock3.png', 'Навушники Marshall Major IV Bluetooth Black', '6499')">
         <div class="left-block">
             <img src="/images/stocks/stock3.png" alt="Stock 3">
         </div>

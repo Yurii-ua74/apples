@@ -1,3 +1,4 @@
+ 
  <!-- блок слайдер -->
     <div class="image-slider-container h-calc invisible-border">
         <div class="image-slider">
@@ -29,16 +30,31 @@
     </div>
 
     <!-- популярні -->
-    <div class="image-slider-container h-auto invisible-border">
+    <div class="image-slider-container h-auto invisible-border"> 
        <div>
            <h1 class="h1-stock">Популярні</h1>
        </div>
+       
        <div class="stock-container">
-       <a href="popular1" class="stock mr-5"><div><img src="/images/popular/popl1.png" alt="Popular 1"></div></a>
-       <a href="popular2" class="stock mr-5"><div><img src="/images/popular/popl2.png" alt="Popular 2"></div></a>
-       <a href="popular3" class="stock mr-5"><div><img src="/images/popular/popl3.png" alt="Popular 3"></div></a>
-       <a href="popular4" class="stock mr-5"><div><img src="/images/popular/popl4.png" alt="Popular 4"></div></a>
-       <a href="popular5" class="stock"><div><img src="/images/popular/popl5.png" alt="Popular 5"></div></a>
+       <div onclick="addToCart('popular/popl1.png', 'iPhone 15 Pro Max 256Gb Natural Titanium', '51999')">
+       <img class="d-max mr-5" src="images/popular/popl1.png" alt="foto">
+       </div>
+       
+       <div onclick="addToCart('popular/popl2.png', 'iPad 10.2 (2021) Wi-Fi 64Gb Space Gray(MK2K3)', '12199')">
+       <img class="d-max mr-5" src="images/popular/popl2.png" alt="foto">
+       </div>
+       
+       <div onclick="addToCart('popular/popl3.png', 'MacBook Air 13 Apple M1/8Gb/256Gb SSD/...', '34599')">
+       <img class="d-max mr-5" src="images/popular/popl3.png" alt="foto">
+       </div>
+       
+       <div onclick="addToCart('popular/popl4.png', 'Ігрова приставка Sony PlayStation 5 Blue-Ray', '22799')">
+       <img class="d-max mr-5" src="images/popular/popl4.png" alt="foto">
+       </div>
+       
+       <div onclick="addToCart('popular/popl5.png', 'Навушники AirPods Pro(2Gen)', '9199')">
+       <img class="d-max" src="images/popular/popl5.png" alt="foto">
+       </div>
        </div>
     </div>
 

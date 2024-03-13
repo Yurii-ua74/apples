@@ -27,7 +27,6 @@
 
 <body>
 
-<?session_start();?>
 <!-- Верхній навігатор  -->
 <nav>
         <div class="container">

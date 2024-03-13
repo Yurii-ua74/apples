@@ -1,4 +1,13 @@
+// підтвердження покупки
+function addToCart(img, product, price) {
+    // Зберегти дані в локальному сховищі браузера
+    localStorage.setItem('cartImg', img);
+    localStorage.setItem('cartProduct', product);
+    localStorage.setItem('cartPrice', price);
 
+    // Перейти на сторінку корзини
+    window.location.href = 'cestino';
+}
 // поле Каталог товарів - випадаючий список
 // перевірка де знаходиться мишка
 function isMouseInButtonOrWindow(event) {

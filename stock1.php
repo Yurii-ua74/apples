@@ -1,7 +1,7 @@
 
-<div class="container-st3 ml-10">
+<div class="container-st3 ml-10" onclick="addToCart('stocks/stock4.png', 'Акустична система JBL Partybox Encore Essential з мікрофоном (JBLPBENCORE1MICEP)', '15999')">
         <div class="left-block">
-            <img src="/images/stocks/stock4.png" alt="Stock 3">
+            <img src="/images/stocks/stock4.png" alt="Stock 4">
         </div>
         <div class="right-block">
             <p class="h1-stock">Артикул товару: 49244</p>
@@ -9,7 +9,7 @@
             <hr>
             <h2 class="h1-white">15 999 ₴</h2>
             <p class="h1-stock">________________________</p>
-            <a href="#" class="oval-button">Купити </a>
+            <a href="cestino" class="oval-button">Купити </a>
             <hr>
             <h4 class="h1-white">Оплата</h4>
             <p class="h1-stock">Криптовалюта, банківська карта, готівка, кредит або розстрочка від банків-партнерів</p>
