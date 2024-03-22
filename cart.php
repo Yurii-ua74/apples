@@ -55,7 +55,7 @@ if (img && product && price && data) {
 });
 
  function confirmPurchase() {
-   
+
     //  підтвердження покупки
     //alert('Покупка підтверджена!');
 

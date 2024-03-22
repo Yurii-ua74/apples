@@ -1,4 +1,4 @@
-
+<form id="myForm">
 <div class="block-center">
 <h3>ID: </h3>
 <h3 class="h1-white" name="id" id="id">id</h3></div>
@@ -20,6 +20,8 @@
 <h3>Дата покупки: </h3>
 <h2 class="h1-white" name="price" id="date">date</h2></div>
 </div>
+<button type="button" class="oval-button" onclick="submitData()">Підтвердити дані</button>
+</form>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,4 +44,34 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('price').innerText = cartPrice + ' ₴';
     document.getElementById('date').innerText = formattedDate;
 });
+
+function submitData() {
+    // Отримати дані з локального сховища
+    var client_id = localStorage.getItem("client_id");
+    var first_name = localStorage.getItem("first_name");
+    var last_name = localStorage.getItem("last_name");
+    var email = localStorage.getItem("email");
+    var cartProduct = localStorage.getItem("cartProduct");
+    var cartPrice = localStorage.getItem("cartPrice");
+    // Отримання поточної дати та часу
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleString();
+
+     // Створення об'єкта або асоціативного масиву
+     var shopData = {
+         "client_id": client_id,
+         "first_name": first_name,
+         "last_name": last_name,
+         "email": email,
+         "cartProduct": cartProduct,
+         "cartPrice": cartPrice
+     };
+     //var data = document.getElementById("dataInput").value;
+     //localStorage.setItem("userData", data);
+     
+     // Перетворення об'єкта у рядок JSON та збереження у локальному сховищі
+     localStorage.setItem("shopData", JSON.stringify(shopData));
+     window.location.href = "shopConfirm";
+}
+
 </script>

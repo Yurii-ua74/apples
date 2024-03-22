@@ -87,6 +87,9 @@ $routes = [
 	'do_login' => 'do_login.php',
 	'do_sale' => 'do_sale.php',
 	'log_out' => 'log_out.php',
+	'shopConfirm' => 'shopConfirm.php',
+	'postData' => 'postData.php',
+	
 ] ;
 // Перевіряє, чи існує зазначений URI в масиві маршрутів.
 if( isset( $routes[ $uri ] ) ) {   // у маршрутах є відповідний запис

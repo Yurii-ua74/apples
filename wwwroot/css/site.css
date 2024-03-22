@@ -293,6 +293,11 @@ padding-bottom: 4px;
 padding-left: 10px;
 }
 
+
+.mb-10 {
+margin-right: 80px;    
+}
+
 .mr-1 {
 margin-right: 3px;
 }
@@ -326,6 +331,10 @@ margin-left: 12px;
 
 .ml-10 {
 margin-left: 80px;
+}
+
+.mt-10 {
+margin-top: 80px;    
 }
 
 .mt-1 {
