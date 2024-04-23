@@ -1,3 +1,4 @@
+<div class="center">
 <form id="myForm">
 <div class="block-center">
 <h3>ID: </h3>
@@ -19,9 +20,10 @@
 <div class="block-center">
 <h3>Дата покупки: </h3>
 <h2 class="h1-white" name="price" id="date">date</h2></div>
-</div>
-<button type="button" class="oval-button" onclick="submitData()">Підтвердити дані</button>
+
+<button type="button" class="oval-button w-100" onclick="submitData()">Підтвердити дані</button>
 </form>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

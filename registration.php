@@ -2,6 +2,7 @@
 <div class="card home">    
     <div class="inside border-r card">  
     <h2 class="h1-white text-align">РЕЄСТРАЦІЯ</h2>
+    <div class="center">
 <form method="post" action="do_register">
   <div class="mb-3 p1">
     <input type="text" class="form-control" id="usname" name="usname" placeholder="Введіть ім'я" required>
@@ -21,5 +22,6 @@
   </div>
   <button type="submit" class="btn btn-primary mt-2 bgc-yellow">Зареєструвати</button> 
 </form>
+</div>
 </div>
 </div>
